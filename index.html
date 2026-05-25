@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Lower limbs </title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Block - Assessment Suite</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="viewport-wrapper">
+        <main class="quiz-container-card">
+            
+            <section id="screen-registration" class="screen-frame">
+                <div class="brand-header">
+                    <h2>Lower Limb Anatomy</h2>
+                    <p>Clinical Physiology Assessment Block</p>
+                </div>
+                <form id="reg-form" class="registration-form">
+                    <div class="input-group">
+                        <label for="student-name-input">Full Student Name</label>
+                        <input type="text" id="student-name-input" placeholder="e.g., Jane Doe, MD" required autocomplete="off">
+                    </div>
+                    <button type="submit" id="btn-start" class="primary-btn">Unlock Assessment</button>
+                </form>
+            </section>
+
+            <section id="screen-assessment" class="screen-frame hidden">
+                <header class="hud-utility-header">
+                    <div id="hud-badge-name" class="hud-badge">👤 --</div>
+                    <div id="hud-score-pill" class="hud-pill">Score: 0%</div>
+                </header>
+                
+                <div class="progress-container">
+                    <div id="hud-progress-text" class="progress-label">Question 0 of 60</div>
+                    <div class="progress-bar-track">
+                        <div id="hud-progress-bar-fill" class="progress-bar-fill" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <div class="question-panel">
+                    <p id="question-text">Loading question text context...</p>
+                </div>
+
+                <div id="options-container" class="options-vertical-stack">
+                    </div>
+
+                <div id="feedback-box" class="feedback-panel hidden">
+                    <h5>Anatomical & Clinical Insight</h5>
+                    <p id="feedback-text">Explanation content.</p>
+                </div>
+
+                <button type="button" id="btn-next" class="primary-btn hidden">Advance Question →</button>
+            </section>
+
+            <section id="screen-results" class="screen-frame hidden">
+                <div class="results-summary-frame">
+                    <span class="trophy-icon">🏆</span>
+                    <h3>Assessment Complete</h3>
+                    <p class="sub-caption">Your results have been successfully finalized.</p>
+                    
+                    <div class="inner-score-box">
+                        <h4 id="res-student-name">Student Name</h4>
+                        <div class="score-metric-label">Verified Performance Score</div>
+                        <div id="res-final-score" class="score-value">0 / 60 (0%)</div>
+                    </div>
+
+                    <div id="db-status-indicator" class="status-pill loading">
+                        <span>⏳ Readying Cloud Sync...</span>
+                    </div>
+
+                    <button type="button" id="btn-restart" class="secondary-btn">Restart Assessment ↺</button>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
+    <script type="module" src="./script.js"></script>
+
+  </body>
+  
+</html>
